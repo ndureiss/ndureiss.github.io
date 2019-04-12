@@ -1,19 +1,14 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router } from "react-router-dom";
 import './App.css';
+import Routes from './Routes';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <p>
-            Welcome on Nicolas Dureisseix website.
-          </p>
-          <img src={logo} className="App-logo" alt="logo" />
-          Work in progress ...
-        </header>
-      </div>
+      <Router>
+        <Routes />
+      </Router>
     );
   }
 }
