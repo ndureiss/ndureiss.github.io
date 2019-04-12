@@ -6,7 +6,7 @@ import Routes from './Routes';
 class App extends React.Component {
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes />
       </Router>
     );
