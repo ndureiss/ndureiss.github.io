@@ -10,7 +10,7 @@ class TemporaryHome extends React.Component {
             Welcome on Nicolas Dureisseix website.
           </p>
           <img src={logo} className="App-logo" alt="logo" />
-          Work in progress ...
+          Work in progress ... Coming soon !
         </header>
       </div>
     )
