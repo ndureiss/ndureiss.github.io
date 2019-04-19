@@ -2,7 +2,7 @@ import React from "react";
 import { Divider, Drawer as MDrawer, List, SvgIcon } from "@material-ui/core";
 import { Mail as MailIcon } from "@material-ui/icons";
 import { withStyles } from "@material-ui/core";
-import MenuIcon from "../../../Components/MenuIcon";
+import MenuIcon from "./Components/MenuIcon";
 import styles from "./styles";
 import { withTranslation } from "react-i18next";
 

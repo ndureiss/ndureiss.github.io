@@ -1,7 +1,7 @@
 import React from "react";
 import {
 	Button,
-	Card,
+	Card as MCard,
 	CardActionArea,
 	CardMedia,
 	CardContent,
@@ -11,20 +11,21 @@ import {
 import { withStyles } from "@material-ui/core";
 import logo from "../../logo.svg";
 
-const styles = {
+const styles = theme => ({
 	card: {
 		maxWidth: 345,
+		margin: theme.spacing.unit,
 	},
 	media: {
 		objectFit: "cover",
 	},
-};
+});
 
-class HomeCard extends React.Component {
+class Card extends React.Component {
 	render() {
 		const { img, title, content, classes } = this.props;
 		return (
-			<Card className={classes.card}>
+			<MCard className={classes.card}>
 				<CardActionArea>
 					<CardMedia
 						component="img"
@@ -46,9 +47,9 @@ class HomeCard extends React.Component {
 						Learn More
 					</Button>
 				</CardActions>
-			</Card>
+			</MCard>
 		);
 	}
 }
 
-export default withStyles(styles)(HomeCard);
+export default withStyles(styles)(Card);
