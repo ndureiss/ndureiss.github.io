@@ -1,7 +1,11 @@
+import Background from "../../../img/background.jpg";
+
 const styles = theme => ({
 	appBar: {
 		zIndex: theme.zIndex.drawer + 1,
-		alignItems: "center",
+		backgroundImage: `url(${Background})`,
+		backgroundRepeat: "no-repeat",
+		backgroundSize: "cover",
 	},
 	toolbar: theme.mixins.toolbar,
 	bigAvatar: {
@@ -11,6 +15,10 @@ const styles = theme => ({
 	},
 	title: {
 		color: "gainsboro",
+	},
+	flag: {
+		flexGrow: 1,
+		width: 50,
 	},
 });
 

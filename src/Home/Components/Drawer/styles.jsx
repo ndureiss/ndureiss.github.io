@@ -14,10 +14,6 @@ const styles = theme => ({
 			color: theme.palette.secondary.main,
 		},
 	},
-	flag: {
-		flexGrow: 1,
-		padding: "2px",
-	},
 });
 
 export default styles;
