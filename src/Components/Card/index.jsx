@@ -9,6 +9,7 @@ import {
 	Typography,
 } from "@material-ui/core";
 import { withStyles } from "@material-ui/core";
+import { withTranslation } from "react-i18next";
 import logo from "../../logo.svg";
 
 const styles = theme => ({
@@ -23,7 +24,7 @@ const styles = theme => ({
 
 class Card extends React.Component {
 	render() {
-		const { img, title, content, classes } = this.props;
+		const { img, title, t, content, classes } = this.props;
 		return (
 			<MCard className={classes.card}>
 				<CardActionArea>
@@ -39,12 +40,14 @@ class Card extends React.Component {
 						<Typography gutterBottom variant="h5" component="h2">
 							{title || "Content"}
 						</Typography>
-						<Typography component="p">{content || "Will come ..."}</Typography>
+						<Typography component="p">
+							{content || "Will come ..."}
+						</Typography>
 					</CardContent>
 				</CardActionArea>
 				<CardActions>
 					<Button size="small" color="primary">
-						Learn More
+						{t("More")}
 					</Button>
 				</CardActions>
 			</MCard>
@@ -52,4 +55,4 @@ class Card extends React.Component {
 	}
 }
 
-export default withStyles(styles)(Card);
+export default withStyles(styles)(withTranslation()(Card));

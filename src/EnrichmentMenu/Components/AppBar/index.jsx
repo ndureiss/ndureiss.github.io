@@ -55,14 +55,23 @@ class AppBar extends React.Component {
 						<Grid item>
 							<Grid {...centerRowContainer} justify="flex-start">
 								<Grid item>
-									<Avatar src={Profile} className={classes.bigAvatar} />
+									<Avatar
+										src={Profile}
+										className={classes.bigAvatar}
+									/>
 								</Grid>
 								<Grid item>
 									<div>
-										<Typography variant="h4" className={classes.title}>
+										<Typography
+											variant="h4"
+											className={classes.title}
+										>
 											Nicolas Dureisseix
 										</Typography>
-										<Typography variant="h5" className={classes.title}>
+										<Typography
+											variant="h5"
+											className={classes.title}
+										>
 											{t("Title")}
 										</Typography>
 									</div>
