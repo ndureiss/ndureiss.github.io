@@ -1,6 +1,6 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import EnrichmentMenu from "../EnrichmentMenu";
+import Home from "../Home";
 import TemporaryHome from "../TemporaryHome";
 
 class Routes extends React.Component {
@@ -8,7 +8,7 @@ class Routes extends React.Component {
 		return (
 			<div>
 				<Route exact path="/" component={TemporaryHome} />
-				<Route exact path="/home" component={EnrichmentMenu} />
+				<Route exact path="/home" component={Home} />
 			</div>
 		);
 	}

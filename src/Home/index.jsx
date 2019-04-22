@@ -1,6 +1,8 @@
 import React from "react";
 import Card from "../Components/Card";
+import { withMenu } from "../EnrichmentMenu";
 import { withTranslation } from "react-i18next";
+
 class Home extends React.Component {
 	render() {
 		return (
@@ -12,4 +14,4 @@ class Home extends React.Component {
 	}
 }
 
-export default withTranslation()(Home);
+export default withMenu(withTranslation()(Home));
