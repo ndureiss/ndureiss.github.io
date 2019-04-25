@@ -25,13 +25,13 @@ class Drawer extends React.Component {
 					<List>
 						<MenuIcon
 							tooltip={t("Email")}
-							Icon={MailIcon}
+							IconComponent={MailIcon}
 							link="mailto:nicolas.dureisseix@hotmail.fr"
 							className={classes.iconHover}
 						/>
 						<MenuIcon
 							tooltip={t("Github")}
-							Icon={SvgIcon}
+							IconComponent={SvgIcon}
 							link="https://github.com/ndureiss"
 							className={classes.iconHover}
 						>
@@ -39,7 +39,7 @@ class Drawer extends React.Component {
 						</MenuIcon>
 						<MenuIcon
 							tooltip={t("LinkedIn")}
-							Icon={SvgIcon}
+							IconComponent={SvgIcon}
 							link="https://www.linkedin.com/in/nicolas-dureisseix"
 							className={classes.iconHover}
 						>
@@ -47,7 +47,7 @@ class Drawer extends React.Component {
 						</MenuIcon>
 						<MenuIcon
 							tooltip={t("RootMe")}
-							Icon={SvgIcon}
+							IconComponent={SvgIcon}
 							link="https://www.root-me.org/ndureiss"
 							className={classes.iconHover}
 						>

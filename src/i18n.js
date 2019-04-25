@@ -20,6 +20,8 @@ const resources = {
 			WorkOverview: "Freelancer, intern, ...",
 			Project: "Projects",
 			ProjectOverview: "School or personal projects, ...",
+			About: "About me",
+			AboutContent: "",
 		},
 	},
 	fr: {
@@ -38,6 +40,8 @@ const resources = {
 			WorkOverview: "Freelancer, stagiaire, ...",
 			Project: "Projets",
 			ProjectOverview: "Projets scolaires, personnels, ...",
+			About: "À propos",
+			AboutContent: "",
 		},
 	},
 };

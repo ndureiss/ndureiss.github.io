@@ -4,13 +4,13 @@ import { withRouter } from "react-router-dom";
 
 class MenuIcon extends React.Component {
 	render() {
-		const { link, tooltip, Icon } = this.props;
+		const { link, tooltip, IconComponent } = this.props;
 		return (
 			<Link href={link}>
 				<ListItem button>
 					<Tooltip title={tooltip} placement="right">
 						<ListItemIcon>
-							<Icon fontSize="large" {...this.props} />
+							<IconComponent fontSize="large" {...this.props} />
 						</ListItemIcon>
 					</Tooltip>
 				</ListItem>

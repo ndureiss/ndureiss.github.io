@@ -14,6 +14,9 @@ const customTheme = createMuiTheme({
 			main: "#B22222",
 		},
 	},
+	typography: {
+		useNextVariants: true,
+	},
 });
 
 class App extends React.Component {
