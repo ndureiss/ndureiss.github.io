@@ -22,6 +22,7 @@ const resources = {
 			ProjectOverview: "School or personal projects, ...",
 			About: "About me",
 			AboutContent: "",
+			Age: "years old",
 		},
 	},
 	fr: {
@@ -42,6 +43,7 @@ const resources = {
 			ProjectOverview: "Projets scolaires, personnels, ...",
 			About: "À propos",
 			AboutContent: "",
+			Age: "ans",
 		},
 	},
 };
