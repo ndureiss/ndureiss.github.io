@@ -6,6 +6,7 @@ import studies from "../img/studies.jpg";
 import projects from "../img/projects.jpg";
 import work from "../img/work.jpg";
 import { Grid } from "@material-ui/core";
+import About from "./Components/About";
 
 const cardItem = {
 	item: true,
@@ -14,8 +15,9 @@ const cardItem = {
 
 const smallCardItem = {
 	...cardItem,
-	sm: 6,
-	md: 4,
+	sm: 12,
+	md: 6,
+	lg: 4,
 };
 
 class Home extends React.Component {
@@ -24,7 +26,7 @@ class Home extends React.Component {
 		return (
 			<Grid container justify="space-around">
 				<Grid {...cardItem}>
-					<Card title={t("About")} content={t("AboutContent")} />
+					<Card title={t("About")} CardContent={About} />
 				</Grid>
 				<Grid {...smallCardItem}>
 					<Card
