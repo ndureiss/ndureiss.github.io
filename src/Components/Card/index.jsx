@@ -10,6 +10,7 @@ import {
 } from "@material-ui/core";
 import { withStyles } from "@material-ui/core";
 import { withTranslation } from "react-i18next";
+import { withRouter } from "react-router-dom";
 
 const styles = theme => ({
 	card: {
@@ -50,7 +51,11 @@ class Card extends React.Component {
 				</CardActionArea>
 				{link && (
 					<CardActions>
-						<Button size="small" color="primary">
+						<Button
+							size="small"
+							color="primary"
+							onClick={_ => this.props.history.push(link)}
+						>
 							{t("More")}
 						</Button>
 					</CardActions>
@@ -60,4 +65,4 @@ class Card extends React.Component {
 	}
 }
 
-export default withStyles(styles)(withTranslation()(Card));
+export default withRouter(withStyles(styles)(withTranslation()(Card)));

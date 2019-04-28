@@ -26,23 +26,30 @@ class Home extends React.Component {
 		return (
 			<Grid container justify="space-around">
 				<Grid {...cardItem}>
-					<Card title={t("About")} CardContent={About} />
+					<Card CardContent={About} />
 				</Grid>
 				<Grid {...smallCardItem}>
 					<Card
 						title={t("Study")}
 						img={studies}
 						content={t("StudyOverview")}
+						link="/studies"
 					/>
 				</Grid>
 				<Grid {...smallCardItem}>
-					<Card title={t("Work")} img={work} content={t("WorkOverview")} />
+					<Card
+						title={t("Work")}
+						img={work}
+						content={t("WorkOverview")}
+						link="/work"
+					/>
 				</Grid>
 				<Grid {...smallCardItem}>
 					<Card
 						title={t("Project")}
 						img={projects}
 						content={t("ProjectOverview")}
+						link="/projects"
 					/>
 				</Grid>
 			</Grid>
