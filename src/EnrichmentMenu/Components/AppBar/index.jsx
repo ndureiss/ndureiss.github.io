@@ -14,15 +14,9 @@ import Flag from "react-flagkit";
 import { withTranslation } from "react-i18next";
 
 class AppBar extends React.Component {
-	state = {
-		switched: true,
-	};
-
 	render() {
 		const { i18n, t, classes } = this.props;
-
 		const translate = () => event => {
-			this.setState({ switched: !this.state.switched });
 			event.target.checked
 				? i18n.changeLanguage("en")
 				: i18n.changeLanguage("fr");
@@ -92,7 +86,7 @@ class AppBar extends React.Component {
 								</Grid>
 								<Grid item>
 									<Switch
-										checked={this.state.switched}
+										checked={i18n.language === "en"}
 										onChange={translate()}
 									/>
 								</Grid>
