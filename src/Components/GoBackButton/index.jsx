@@ -6,10 +6,11 @@ import { withTranslation } from "react-i18next";
 import { withRouter } from "react-router-dom";
 
 const styles = theme => ({
-	hover: {
+	button: {
 		"&:hover": {
 			color: theme.palette.secondary.main,
 		},
+		margin: theme.spacing.unit,
 	},
 });
 
@@ -18,7 +19,7 @@ class GoBackButton extends React.Component {
 		const { classes, history, t } = this.props;
 		return (
 			<React.Fragment>
-				<Button onClick={() => history.goBack()} className={classes.hover}>
+				<Button onClick={() => history.goBack()} className={classes.button}>
 					<ChevronLeftIcon />
 					{t("GoBack")}
 				</Button>
