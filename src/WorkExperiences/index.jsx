@@ -6,7 +6,7 @@ import { withTranslation } from "react-i18next";
 import TAS from "../img/tas.png";
 import IFP from "../img/ifp.png";
 import IRIT from "../img/irit.png";
-import { Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 
 class WorkExperiences extends React.Component {
 	render() {
@@ -19,9 +19,20 @@ class WorkExperiences extends React.Component {
 					alwaysOpen
 					title={t("TAS")}
 					subtitle={`2019 - ${t("Today")}`}
-					img={TAS}
-					imgHeight="45px"
-					Content={<Typography variant="body2">{t("TASDesc")}</Typography>}
+					Content={
+						<Grid container justify="space-between" alignItems="center">
+							<Grid item>
+								<Typography variant="body2">{t("TASDesc")}</Typography>
+							</Grid>
+							<Grid item>
+								<img
+									src={TAS}
+									alt="Img"
+									style={{ maxWidth: "140px" }}
+								/>
+							</Grid>
+						</Grid>
+					}
 					extras={"TOULOUSE, FRANCE"}
 				/>
 				<ExpansionPanel
@@ -29,9 +40,20 @@ class WorkExperiences extends React.Component {
 					alwaysOpen
 					title={t("IFP")}
 					subtitle={`2018 - ${t("Today")}`}
-					img={IFP}
-					imgHeight="28px"
-					Content={<Typography variant="body2">{t("IFPDesc")}</Typography>}
+					Content={
+						<Grid container justify="space-between" alignItems="center">
+							<Grid item>
+								<Typography variant="body2">{t("IFPDesc")}</Typography>
+							</Grid>
+							<Grid item>
+								<img
+									src={IFP}
+									alt="Img"
+									style={{ maxWidth: "140px" }}
+								/>
+							</Grid>
+						</Grid>
+					}
 					extras={"MUNICH, ALLEMAGNE"}
 				/>
 				<ExpansionPanel
@@ -39,10 +61,19 @@ class WorkExperiences extends React.Component {
 					alwaysOpen
 					title={t("IRIT")}
 					subtitle="2017"
-					img={IRIT}
-					imgHeight="55px"
 					Content={
-						<Typography variant="body2">{t("IRITDesc")}</Typography>
+						<Grid container justify="space-between" alignItems="center">
+							<Grid item>
+								<Typography variant="body2">{t("IRITDesc")}</Typography>
+							</Grid>
+							<Grid item>
+								<img
+									src={IRIT}
+									alt="Img"
+									style={{ maxHeight: "65px" }}
+								/>
+							</Grid>
+						</Grid>
 					}
 					extras={"TOULOUSE, FRANCE"}
 				/>
