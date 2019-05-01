@@ -15,7 +15,7 @@ class Studies extends React.Component {
 		expanded: "panel1",
 	};
 
-	handleChange = panel => (event, expanded) => {
+	handleChange = panel => () => {
 		this.setState({
 			expanded: panel,
 		});
