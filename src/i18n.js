@@ -55,7 +55,7 @@ const resources = {
 			IRIT: "Intern as software developer",
 			IRITDesc:
 				"Documentation, adaptation and deployment of GloudSim platform (Google trace based Cloud Simulator) developed by Mr Sheng Di",
-			IFP: "Intern the freelancer as fullstack developer",
+			IFP: "Intern then freelancer as fullstack developer",
 			IFPDesc: "Web application development for Industry",
 			TAS: "Intern for IT/IS security",
 			TASDesc:
