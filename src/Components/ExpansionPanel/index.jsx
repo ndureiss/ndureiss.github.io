@@ -13,7 +13,7 @@ import { withStyles } from "@material-ui/core";
 
 const styles = theme => ({
 	panel: {
-		margin: theme.spacing.unit,
+		margin: theme.spacing.unit * 0.6,
 	},
 	img: {
 		maxHeight: "32px",

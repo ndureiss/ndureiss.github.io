@@ -12,7 +12,7 @@ import { withTranslation } from "react-i18next";
 
 class Studies extends React.Component {
 	state = {
-		expanded: "panel2",
+		expanded: "panel1",
 	};
 
 	handleChange = panel => (event, expanded) => {

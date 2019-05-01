@@ -8,7 +8,7 @@ const resources = {
 		translation: {
 			Welcome: "Welcome on Nicolas Dureisseix website",
 			WIP: "Work in progress ... Coming soon !",
-			Title: "Junior Engineer in Cybersecurity",
+			Title: "Student in IT Security",
 			Email: "Send me an email",
 			Github: "Explore my Github",
 			LinkedIn: "Follow me on LinkedIn",
@@ -49,13 +49,15 @@ const resources = {
 			IMA: "Computer Science and Applied Mathematics",
 			IMAOpt: "Software Systems option",
 			TLSSEC: "TLS-SEC training course, see above",
+			TLS_SEC:
+				"Half-year training about cyber-security (shared between ENAC, ENSEEIHT and Toulouse INSA engineering schools)",
 		},
 	},
 	fr: {
 		translation: {
 			Welcome: "Bienvenue sur le site de Nicolas Dureisseix",
 			WIP: "Travail en cours ...",
-			Title: "Ingénieur cybersécurité",
+			Title: "Étudiant sécurité informatique",
 			Email: "Me contacter par mail",
 			Github: "Explorer mon Github",
 			LinkedIn: "Me suivre sur LinkedIn",
@@ -95,6 +97,8 @@ const resources = {
 			IMA: "Informatique et Mathématiques Appliquées",
 			IMAOpt: "spécialité Logiciels",
 			TLSSEC: "Formation TLS-SEC, voir ci-dessus",
+			TLS_SEC:
+				"Formation de sécurité des systèmes d'informations et des réseaux (commune à l'ENAC, l'ENSEEIHT et l'INSA Toulouse)",
 		},
 	},
 };
