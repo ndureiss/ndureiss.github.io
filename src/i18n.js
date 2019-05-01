@@ -6,9 +6,10 @@ import { initReactI18next } from "react-i18next";
 const resources = {
 	en: {
 		translation: {
+			Today: "Now",
 			Welcome: "Welcome on Nicolas Dureisseix website",
 			WIP: "Work in progress ... Coming soon !",
-			Title: "Student in IT Security",
+			Title: "Student in IT/IS Security",
 			Email: "Send me an email",
 			Github: "Explore my Github",
 			LinkedIn: "Follow me on LinkedIn",
@@ -51,10 +52,19 @@ const resources = {
 			TLSSEC: "TLS-SEC training course, see above",
 			TLS_SEC:
 				"Half-year training about cyber-security (shared between ENAC, ENSEEIHT and Toulouse INSA engineering schools)",
+			IRIT: "Intern as software developer",
+			IRITDesc:
+				"Documentation, adaptation and deployment of GloudSim platform (Google trace based Cloud Simulator) developed by Mr Sheng Di",
+			IFP: "Intern the freelancer as fullstack developer",
+			IFPDesc: "Web application development for Industry",
+			TAS: "Intern for IT/IS security",
+			TASDesc:
+				"Analysis and integration of cyber-security into satellites ground systems",
 		},
 	},
 	fr: {
 		translation: {
+			Today: "Aujourd'hui",
 			Welcome: "Bienvenue sur le site de Nicolas Dureisseix",
 			WIP: "Travail en cours ...",
 			Title: "Étudiant sécurité informatique",
@@ -99,6 +109,14 @@ const resources = {
 			TLSSEC: "Formation TLS-SEC, voir ci-dessus",
 			TLS_SEC:
 				"Formation de sécurité des systèmes d'informations et des réseaux (commune à l'ENAC, l'ENSEEIHT et l'INSA Toulouse)",
+			IRIT: "Stagiaire en développement logiciel",
+			IRITDesc:
+				"Documentation, adaptation et mise en place de la plateforme GloudSim (Simulateur cloud basé sur les traces Google) développé par M. Sheng Di",
+			IFP: "Stagiaire puis freelancer en développement web (fullstack)",
+			IFPDesc: "Développement d'applications web pour l'industrie",
+			TAS: "Stagiaire cybersécurité",
+			TASDesc:
+				"Analyse et intégration de cyber-sécurité dans les segments sols des systèmes satellites",
 		},
 	},
 };

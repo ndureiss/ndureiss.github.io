@@ -15,30 +15,32 @@ const styles = theme => ({
 	panel: {
 		margin: theme.spacing.unit * 0.6,
 	},
-	img: {
-		maxHeight: "32px",
-	},
 });
 class ExpansionPanel extends React.Component {
 	render() {
 		const {
+			alwaysOpen = false,
 			classes,
 			Content,
 			expanded,
 			extras,
 			img,
-			onChange,
+			imgHeight,
+			imgWidth,
+			onChange = () => {},
 			panel,
 			subtitle,
 			title,
 		} = this.props;
 		return (
 			<MExpansionPanel
-				expanded={expanded === panel}
+				expanded={expanded === panel || alwaysOpen}
 				onChange={onChange(panel)}
 				className={classes.panel}
 			>
-				<ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+				<ExpansionPanelSummary
+					expandIcon={!alwaysOpen && <ExpandMoreIcon />}
+				>
 					<Grid container justify="space-between">
 						<Grid item>
 							<Grid
@@ -61,7 +63,15 @@ class ExpansionPanel extends React.Component {
 						</Grid>
 						{img && (
 							<Grid item>
-								<img src={img} alt="Img" className={classes.img} />
+								<img
+									src={img}
+									alt="Img"
+									style={{
+										maxHeight:
+											imgHeight || (imgWidth ? "auto" : "32px"),
+										maxWidth: imgWidth || "auto",
+									}}
+								/>
 							</Grid>
 						)}
 					</Grid>
