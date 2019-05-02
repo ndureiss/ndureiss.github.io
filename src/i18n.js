@@ -75,6 +75,12 @@ const resources = {
 			MiniJavaDesc:
 				"Mini-java interpreter build with Java and TAM assembly machine. " +
 				"All steps are implemented : lexical, syntax, semantic analysis and code generation.",
+			MiniShellDesc:
+				"Unix mini-shell, written en C, able to launch classic commands or complex ones (redirection, " +
+				"pipe, ...) but also back and foreground tasks.",
+			HidoopDesc:
+				"Simplified implementation of Hadoop system with its file system HDFS, written in Java. Able to " +
+				"run functions based on Map/Reduce model.",
 		},
 	},
 	fr: {
@@ -149,6 +155,12 @@ const resources = {
 				"Compilateur de mini-java écrit en Java, CUP et s'appuyant sur la machine TAM. " +
 				"Toutes les phases de la compilation ont été implémentées : analyses lexicale, " +
 				"syntaxique, sémantique et génération de code.",
+			MiniShellDesc:
+				"Mini-shell Unix, écrit en C, pouvant lancer des commandes classiques, à redirection, à | mais " +
+				"également des tâches de fond ou de premier-plan.",
+			HidoopDesc:
+				"Implémentation simplifiée du système Hadoop et son système de fichier HDFS, écrit en Java. Capable " +
+				"d'exécuter des fonctions de traitement de données de type Map/Reduce.",
 		},
 	},
 };

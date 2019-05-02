@@ -12,9 +12,6 @@ import GithubIcon from "../../Components/Icons/Github";
 
 const styles = theme => {
 	return {
-		content: {
-			margin: theme.spacing.unit,
-		},
 		iconHover: {
 			"&:hover": {
 				color: theme.palette.secondary.main,

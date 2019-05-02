@@ -5,6 +5,7 @@ import Card from "../Components/Card";
 import ProjetLong from "./ProjetLong";
 import MiniJava from "./MiniJava";
 import { Grid } from "@material-ui/core";
+import { withTranslation } from "react-i18next";
 
 const halfWidthCardItem = {
 	item: true,
@@ -16,15 +17,22 @@ const halfWidthCardItem = {
 // TODO : best handle of height
 class Projects extends React.Component {
 	render() {
+		const { t } = this.props;
 		return (
 			<React.Fragment>
 				<GoBackButton />
 				<Grid container>
 					<Grid item {...halfWidthCardItem}>
-						<Card CardContent={ProjetLong} style={{ height: "100%" }} />
+						<Card CardContent={ProjetLong} style={{ height: "95%" }} />
 					</Grid>
 					<Grid item {...halfWidthCardItem}>
-						<Card CardContent={MiniJava} style={{ height: "100%" }} />
+						<Card CardContent={MiniJava} style={{ height: "95%" }} />
+					</Grid>
+					<Grid item xs={12}>
+						<Card title={t("MiniShell")} content={t("MiniShellDesc")} />
+					</Grid>
+					<Grid item xs={12}>
+						<Card title={t("Hidoop")} content={t("HidoopDesc")} />
 					</Grid>
 				</Grid>
 			</React.Fragment>
@@ -32,4 +40,4 @@ class Projects extends React.Component {
 	}
 }
 
-export default withMenu(Projects);
+export default withMenu(withTranslation()(Projects));
