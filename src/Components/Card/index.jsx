@@ -26,7 +26,7 @@ class Card extends React.Component {
 		const { CardContent, content, img, link, title, t, classes } = this.props;
 		return (
 			<MCard className={classes.card}>
-				<CardActionArea>
+				<CardActionArea disabled>
 					{img && (
 						<CardMedia
 							component="img"

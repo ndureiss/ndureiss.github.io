@@ -1,16 +1,16 @@
 import React from "react";
 import GoBackButton from "../Components/GoBackButton";
 import ExpansionPanel from "../Components/ExpansionPanel";
+import { Grid, Typography } from "@material-ui/core";
 import { withMenu } from "../EnrichmentMenu";
 import { withTranslation } from "react-i18next";
 import TAS from "../img/tas.png";
 import IFP from "../img/ifp.png";
 import IRIT from "../img/irit.png";
-import { Grid, Typography } from "@material-ui/core";
 
 class WorkExperiences extends React.Component {
 	render() {
-		const { t } = this.props;
+		const { i18n, t } = this.props;
 		return (
 			<React.Fragment>
 				<GoBackButton />
@@ -25,11 +25,21 @@ class WorkExperiences extends React.Component {
 								<Typography variant="body2">{t("TASDesc")}</Typography>
 							</Grid>
 							<Grid item>
-								<img
-									src={TAS}
-									alt="Img"
-									style={{ maxWidth: "140px" }}
-								/>
+								<a
+									target="_blank"
+									rel="noopener noreferrer"
+									href={`https://www.thalesgroup.com/${
+										i18n.language === "en"
+											? "en/global/activities/space"
+											: "fr/espace"
+									}`}
+								>
+									<img
+										src={TAS}
+										alt="Img"
+										style={{ maxWidth: "140px" }}
+									/>
+								</a>
 							</Grid>
 						</Grid>
 					}
@@ -46,11 +56,17 @@ class WorkExperiences extends React.Component {
 								<Typography variant="body2">{t("IFPDesc")}</Typography>
 							</Grid>
 							<Grid item>
-								<img
-									src={IFP}
-									alt="Img"
-									style={{ maxWidth: "140px" }}
-								/>
+								<a
+									target="_blank"
+									rel="noopener noreferrer"
+									href="https://ifpanalytics.de/"
+								>
+									<img
+										src={IFP}
+										alt="Img"
+										style={{ maxWidth: "140px" }}
+									/>
+								</a>
 							</Grid>
 						</Grid>
 					}
@@ -67,11 +83,17 @@ class WorkExperiences extends React.Component {
 								<Typography variant="body2">{t("IRITDesc")}</Typography>
 							</Grid>
 							<Grid item>
-								<img
-									src={IRIT}
-									alt="Img"
-									style={{ maxHeight: "65px" }}
-								/>
+								<a
+									target="_blank"
+									rel="noopener noreferrer"
+									href={`https://www.irit.fr/?lang=${i18n.language}`}
+								>
+									<img
+										src={IRIT}
+										alt="Img"
+										style={{ maxHeight: "65px" }}
+									/>
+								</a>
 							</Grid>
 						</Grid>
 					}
