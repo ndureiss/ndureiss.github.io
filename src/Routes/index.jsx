@@ -6,12 +6,6 @@ import Studies from "../Studies";
 import WorkExperiences from "../WorkExperiences";
 import Projects from "../Projects";
 
-class NoMatch extends React.Component {
-	render() {
-		return <Redirect to="/" />;
-	}
-}
-
 class Routes extends React.Component {
 	render() {
 		return (
