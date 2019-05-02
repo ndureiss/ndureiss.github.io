@@ -61,6 +61,8 @@ const resources = {
 			TAS: "Intern for IT/IS security",
 			TASDesc:
 				"Analysis and integration of cyber-security into satellites ground systems",
+			Teammate: "Teammate",
+			CodeLanguage: "Languages",
 			ProjetLong:
 				"Exploitation of VirtualBox vulnerability to escape from host",
 			SergeyZelenyuk:
@@ -69,6 +71,10 @@ const resources = {
 				" driver in Linux kernel. In fact, the vulnerable code is located in the Intel network card" +
 				" emulation function. Overflows into it allow attacker to control execution flow, bypass" +
 				" security mechanisms (ASLR, DEP) and reach host memory.",
+			MiniJava: "Mini-Java interpreter",
+			MiniJavaDesc:
+				"Mini-java interpreter build with Java and TAM assembly machine. " +
+				"All steps are implemented : lexical, syntax, semantic analysis and code generation.",
 		},
 	},
 	fr: {
@@ -128,6 +134,8 @@ const resources = {
 			TAS: "Stagiaire cybersécurité",
 			TASDesc:
 				"Analyse et intégration de cyber-sécurité dans les segments sols des systèmes satellites",
+			Teammate: "Équipe",
+			CodeLanguage: "Langages",
 			ProjetLong:
 				"Exploitation d'une vulnérabilité de VirtualBox pour sortir de l'environnement virtualisé",
 			SergeyZelenyuk:
@@ -136,6 +144,11 @@ const resources = {
 				" du noyau Linux. En effet, le code vulnérable est situé dans la fonction émulant la carte réseau" +
 				" Intel. Déborder en mémoire permet à l'attaquant de contrôler le flot d'exécution du programme," +
 				" contourner les mécanismes de sécurité (ASLR, DEP) et d'atteindre la mémoire de l'hôte.",
+			MiniJava: "Compilateur de mini-java",
+			MiniJavaDesc:
+				"Compilateur de mini-java écrit en Java, CUP et s'appuyant sur la machine TAM. " +
+				"Toutes les phases de la compilation ont été implémentées : analyses lexicale, " +
+				"syntaxique, sémantique et génération de code.",
 		},
 	},
 };

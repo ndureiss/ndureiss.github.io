@@ -29,9 +29,9 @@ const linkProps = link => ({
 	href: link,
 });
 
-class ProjetLong extends React.Component {
+class MiniJava extends React.Component {
 	render() {
-		const { t, classes } = this.props;
+		const { i18n, t, classes } = this.props;
 		return (
 			<CardContent>
 				<Grid
@@ -39,18 +39,18 @@ class ProjetLong extends React.Component {
 					direction="column"
 					justify="space-between"
 					alignItems="stretch"
-					spacing={32}
+					spacing={40}
 				>
 					<Grid item>
 						<Typography gutterBottom variant="h5">
-							{t("ProjetLong")}
+							{t("MiniJava")}
 						</Typography>
 					</Grid>
 					<Divider variant="middle" />
 					<Grid item>
 						<Typography variant="overline">{t("Overview")}</Typography>
 						<Typography variant="body1" align="justify">
-							{t("SergeyZelenyuk")}
+							{t("MiniJavaDesc")}
 						</Typography>
 					</Grid>
 					<Grid item>
@@ -59,26 +59,43 @@ class ProjetLong extends React.Component {
 								<Typography variant="overline">
 									{t("CodeLanguage")}
 								</Typography>
-								<Typography variant="body1">{"C"}</Typography>
+								<Typography variant="body1">
+									{"Java, CUP, TAM"}
+								</Typography>
 							</Grid>
 							<Grid item>
 								<Typography variant="overline">
-									{t("Teammate")}
+									{`${t("Teammate")}${
+										i18n.language === "en" ? "s" : ""
+									}`}
 								</Typography>
-								<Link {...linkProps("https://cchochoy.github.io")}>
+								<Link {...linkProps("https://benjamin-raymond.pro/")}>
 									<Typography
 										variant="body1"
 										className={classes.link}
 										color="primary"
 									>
-										{"Clément Chochoy"}
+										{"Benjamin Raymond"}
+									</Typography>
+								</Link>
+								<Link
+									{...linkProps(
+										"https://www.linkedin.com/in/loic-poligny/"
+									)}
+								>
+									<Typography
+										variant="body1"
+										className={classes.link}
+										color="primary"
+									>
+										{"Loïc Poligny"}
 									</Typography>
 								</Link>
 							</Grid>
 							<Grid item>
 								<Link
 									{...linkProps(
-										"https://github.com/ndureiss/e1000_vulnerability_exploit"
+										"https://github.com/7PH/ENSEEIHT-STDL-Mini-Java"
 									)}
 								>
 									<GithubIcon
@@ -95,4 +112,4 @@ class ProjetLong extends React.Component {
 	}
 }
 
-export default withStyles(styles)(withTranslation()(ProjetLong));
+export default withStyles(styles)(withTranslation()(MiniJava));

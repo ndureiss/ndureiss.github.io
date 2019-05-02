@@ -23,9 +23,18 @@ const styles = theme => ({
 
 class Card extends React.Component {
 	render() {
-		const { CardContent, content, img, link, title, t, classes } = this.props;
+		const {
+			CardContent,
+			content,
+			img,
+			link,
+			title,
+			t,
+			classes,
+			...rest
+		} = this.props;
 		return (
-			<MCard className={classes.card}>
+			<MCard className={classes.card} {...rest}>
 				<CardActionArea disabled>
 					{img && (
 						<CardMedia
@@ -38,7 +47,7 @@ class Card extends React.Component {
 					)}
 				</CardActionArea>
 				{CardContent ? (
-					<CardContent />
+					<CardContent {...rest} />
 				) : (
 					<MCardContent>
 						<Typography gutterBottom variant="h5">

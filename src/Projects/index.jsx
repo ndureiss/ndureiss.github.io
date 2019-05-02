@@ -3,6 +3,7 @@ import GoBackButton from "../Components/GoBackButton";
 import { withMenu } from "../EnrichmentMenu";
 import Card from "../Components/Card";
 import ProjetLong from "./ProjetLong";
+import MiniJava from "./MiniJava";
 import { Grid } from "@material-ui/core";
 
 const halfWidthCardItem = {
@@ -12,6 +13,7 @@ const halfWidthCardItem = {
 	md: 6,
 };
 
+// TODO : best handle of height
 class Projects extends React.Component {
 	render() {
 		return (
@@ -19,7 +21,10 @@ class Projects extends React.Component {
 				<GoBackButton />
 				<Grid container>
 					<Grid item {...halfWidthCardItem}>
-						<Card CardContent={ProjetLong} />
+						<Card CardContent={ProjetLong} style={{ height: "100%" }} />
+					</Grid>
+					<Grid item {...halfWidthCardItem}>
+						<Card CardContent={MiniJava} style={{ height: "100%" }} />
 					</Grid>
 				</Grid>
 			</React.Fragment>
