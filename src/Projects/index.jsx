@@ -1,19 +1,30 @@
 import React from "react";
 import GoBackButton from "../Components/GoBackButton";
-import { Typography } from "@material-ui/core";
 import { withMenu } from "../EnrichmentMenu";
-import { withTranslation } from "react-i18next";
+import Card from "../Components/Card";
+import ProjetLong from "./ProjetLong";
+import { Grid } from "@material-ui/core";
+
+const halfWidthCardItem = {
+	item: true,
+	xs: 12,
+	sm: 12,
+	md: 6,
+};
 
 class Projects extends React.Component {
 	render() {
-		const { t } = this.props;
 		return (
 			<React.Fragment>
 				<GoBackButton />
-				<Typography variant="body2">{t("WIP")}</Typography>
+				<Grid container>
+					<Grid item {...halfWidthCardItem}>
+						<Card CardContent={ProjetLong} />
+					</Grid>
+				</Grid>
 			</React.Fragment>
 		);
 	}
 }
 
-export default withMenu(withTranslation()(Projects));
+export default withMenu(Projects);

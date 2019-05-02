@@ -36,19 +36,19 @@ class Card extends React.Component {
 							image={img}
 						/>
 					)}
-					{CardContent ? (
-						<CardContent title={title} />
-					) : (
-						<MCardContent>
-							<Typography gutterBottom variant="h5">
-								{title || "Content"}
-							</Typography>
-							<Typography variant="subtitle1">
-								{content || "Will come ..."}
-							</Typography>
-						</MCardContent>
-					)}
 				</CardActionArea>
+				{CardContent ? (
+					<CardContent />
+				) : (
+					<MCardContent>
+						<Typography gutterBottom variant="h5">
+							{title || "Content"}
+						</Typography>
+						<Typography variant="subtitle1">
+							{content || "Will come ..."}
+						</Typography>
+					</MCardContent>
+				)}
 				{link && (
 					<CardActions>
 						<Button
