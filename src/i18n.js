@@ -27,7 +27,7 @@ const resources = {
 			AboutContent: "",
 			Age: "years old",
 			Live: "Live in",
-			Language: "Language",
+			Language: "Languages",
 			French: "French",
 			MotherTongue: "Mother-tongue",
 			English: "English",
@@ -64,7 +64,7 @@ const resources = {
 			Teammate: "Teammate",
 			CodeLanguage: "Languages",
 			ProjetLong:
-				"Exploitation of VirtualBox vulnerability to escape from host",
+				"Exploitation of VirtualBox vulnerability to escape from virtualization",
 			SergeyZelenyuk:
 				"Sergey Zelenuyk highlights a vulnerability in VirtualBox code (< 5.2.20)" +
 				" and he described a POC in his github. It consists to load a malicious version of e1000" +
@@ -143,7 +143,7 @@ const resources = {
 			Teammate: "Équipe",
 			CodeLanguage: "Langages",
 			ProjetLong:
-				"Exploitation d'une vulnérabilité de VirtualBox pour sortir de l'environnement virtualisé",
+				"Exploitation d'une vulnérabilité de VirtualBox pour sortir de la virtualisation",
 			SergeyZelenyuk:
 				"Sergey Zelenuyk a découvert une vulnérabilité dans le code de VirtualBox (< 5.2.20)" +
 				" et a décrit un POC sur github. Elle consiste à charger une version malveillante du driver e1000" +

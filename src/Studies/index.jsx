@@ -1,5 +1,5 @@
 import React from "react";
-import GoBackButton from "../Components/GoBackButton";
+import GoHomeButton from "../Components/GoHomeButton";
 import ExpansionPanel from "../Components/ExpansionPanel";
 import HighSchool from "./HighSchool";
 import Prepa from "./Prepa";
@@ -25,7 +25,7 @@ class Studies extends React.Component {
 		const { t } = this.props;
 		return (
 			<React.Fragment>
-				<GoBackButton />
+				<GoHomeButton />
 				<ExpansionPanel
 					panel="panel1"
 					expanded={this.state.expanded}

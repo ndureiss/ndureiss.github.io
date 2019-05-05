@@ -1,5 +1,5 @@
 import React from "react";
-import GoBackButton from "../Components/GoBackButton";
+import GoHomeButton from "../Components/GoHomeButton";
 import { withMenu } from "../EnrichmentMenu";
 import Card from "../Components/Card";
 import ProjetLong from "./ProjetLong";
@@ -20,7 +20,7 @@ class Projects extends React.Component {
 		const { t } = this.props;
 		return (
 			<React.Fragment>
-				<GoBackButton />
+				<GoHomeButton />
 				<Grid container>
 					<Grid item {...halfWidthCardItem}>
 						<Card CardContent={ProjetLong} style={{ height: "95%" }} />

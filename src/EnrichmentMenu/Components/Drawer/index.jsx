@@ -1,6 +1,6 @@
 import React from "react";
 import { Divider, Drawer as MDrawer, List } from "@material-ui/core";
-import { Mail as MailIcon, Home as HomeIcon } from "@material-ui/icons";
+import { Mail as MailIcon } from "@material-ui/icons";
 import { withStyles } from "@material-ui/core";
 import MenuIcon from "./Components/MenuIcon";
 import styles from "./styles";
@@ -26,12 +26,6 @@ class Drawer extends React.Component {
 				>
 					<Divider />
 					<List>
-						<MenuIcon
-							tooltip={t("Home")}
-							IconComponent={HomeIcon}
-							link="/home"
-							className={classes.iconHover}
-						/>
 						<MenuIcon
 							tooltip={t("Email")}
 							IconComponent={MailIcon}

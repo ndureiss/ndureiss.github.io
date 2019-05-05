@@ -1,5 +1,5 @@
 import React from "react";
-import GoBackButton from "../Components/GoBackButton";
+import GoHomeButton from "../Components/GoHomeButton";
 import ExpansionPanel from "../Components/ExpansionPanel";
 import { Grid, Typography } from "@material-ui/core";
 import { withMenu } from "../EnrichmentMenu";
@@ -13,7 +13,7 @@ class WorkExperiences extends React.Component {
 		const { i18n, t } = this.props;
 		return (
 			<React.Fragment>
-				<GoBackButton />
+				<GoHomeButton />
 				<ExpansionPanel
 					panel="panel1"
 					alwaysOpen

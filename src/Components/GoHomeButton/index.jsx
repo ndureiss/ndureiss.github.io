@@ -14,18 +14,16 @@ const styles = theme => ({
 	},
 });
 
-class GoBackButton extends React.Component {
+class GoHomeButton extends React.Component {
 	render() {
 		const { classes, history, t } = this.props;
 		return (
-			<React.Fragment>
-				<Button onClick={() => history.goBack()} className={classes.button}>
-					<ChevronLeftIcon />
-					{t("GoBack")}
-				</Button>
-			</React.Fragment>
+			<Button onClick={() => history.push("/")} className={classes.button}>
+				<ChevronLeftIcon />
+				{t("GoBack")}
+			</Button>
 		);
 	}
 }
 
-export default withRouter(withStyles(styles)(withTranslation()(GoBackButton)));
+export default withRouter(withStyles(styles)(withTranslation()(GoHomeButton)));

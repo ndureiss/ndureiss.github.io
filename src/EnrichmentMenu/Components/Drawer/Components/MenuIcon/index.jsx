@@ -6,7 +6,7 @@ class MenuIcon extends React.Component {
 	render() {
 		const { link, tooltip, IconComponent } = this.props;
 		return (
-			<Link href={link}>
+			<Link href={link} target={!link.includes("mailto:") ? "_blank" : ""}>
 				<ListItem button>
 					<Tooltip title={tooltip} placement="right">
 						<ListItemIcon>
