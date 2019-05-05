@@ -10,6 +10,7 @@ const resources = {
 			Overview: "Overview",
 			Welcome: "Welcome on Nicolas Dureisseix website",
 			WIP: "Work in progress ... Coming soon !",
+			WIPTrad: "Translation will be completed soon for this section!",
 			Title: "Student in IT/IS Security",
 			Email: "Send me an email",
 			Github: "Explore my Github",

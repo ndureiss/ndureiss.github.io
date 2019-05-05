@@ -9,6 +9,15 @@ import TLSSEC from "./TLSSEC";
 import tlssec from "../img/tlssec.png";
 import { withMenu } from "../EnrichmentMenu";
 import { withTranslation } from "react-i18next";
+import { Typography, withStyles } from "@material-ui/core";
+
+const styles = theme => {
+	return {
+		wip: {
+			color: theme.palette.secondary.main,
+		},
+	};
+};
 
 class Studies extends React.Component {
 	state = {
@@ -22,10 +31,19 @@ class Studies extends React.Component {
 	};
 
 	render() {
-		const { t } = this.props;
+		const { i18n, t, classes } = this.props;
 		return (
 			<React.Fragment>
 				<GoHomeButton />
+				{i18n.language === "en" && (
+					<Typography
+						variant="button"
+						align="center"
+						className={classes.wip}
+					>
+						{t("WIPTrad")}
+					</Typography>
+				)}
 				<ExpansionPanel
 					panel="panel1"
 					expanded={this.state.expanded}
@@ -69,4 +87,4 @@ class Studies extends React.Component {
 	}
 }
 
-export default withMenu(withTranslation()(Studies));
+export default withMenu(withStyles(styles)(withTranslation()(Studies)));
