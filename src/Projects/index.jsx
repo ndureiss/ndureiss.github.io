@@ -28,11 +28,33 @@ class Projects extends React.Component {
 					<Grid item {...halfWidthCardItem}>
 						<Card CardContent={MiniJava} style={{ height: "95%" }} />
 					</Grid>
-					<Grid item xs={12}>
-						<Card title={t("MiniShell")} content={t("MiniShellDesc")} />
+					<Grid item xs={6}>
+						<Card
+							title={t("Secos")}
+							content={t("SecosDesc")}
+							style={{ height: "95%" }}
+						/>
 					</Grid>
-					<Grid item xs={12}>
-						<Card title={t("Hidoop")} content={t("HidoopDesc")} />
+					<Grid item xs={6}>
+						<Card
+							title={t("Website")}
+							content={t("WebsiteDesc")}
+							style={{ height: "95%" }}
+						/>
+					</Grid>
+					<Grid item xs={6}>
+						<Card
+							title={t("MiniShell")}
+							content={t("MiniShellDesc")}
+							style={{ height: "95%" }}
+						/>
+					</Grid>
+					<Grid item xs={6}>
+						<Card
+							title={t("Hidoop")}
+							content={t("HidoopDesc")}
+							style={{ height: "95%" }}
+						/>
 					</Grid>
 				</Grid>
 			</React.Fragment>

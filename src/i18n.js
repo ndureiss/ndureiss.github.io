@@ -16,6 +16,7 @@ const resources = {
 			Github: "Explore my Github",
 			LinkedIn: "Follow me on LinkedIn",
 			RootMe: "See my RootMe profile",
+			Resume: "Download my resume",
 			More: "Learn more",
 			GoBack: "Go back",
 			Study: "Studies",
@@ -82,6 +83,11 @@ const resources = {
 			HidoopDesc:
 				"Simplified implementation of Hadoop system with its file system HDFS, written in Java. Able to " +
 				"run functions based on Map/Reduce model.",
+			Website: "Personal website",
+			WebsiteDesc:
+				"Own personal website written on React and hosted by Github pages.",
+			Secos: "SECOS",
+			SecosDesc: "Educational x86 kernel written in C for a school project",
 		},
 	},
 	fr: {
@@ -95,6 +101,7 @@ const resources = {
 			Github: "Explorer mon Github",
 			LinkedIn: "Me suivre sur LinkedIn",
 			RootMe: "Voir mon profil RootMe",
+			Resume: "Télécharger mon CV",
 			More: "En savoir plus",
 			GoBack: "Revenir",
 			Study: "Études",
@@ -162,6 +169,11 @@ const resources = {
 			HidoopDesc:
 				"Implémentation simplifiée du système Hadoop et son système de fichier HDFS, écrit en Java. Capable " +
 				"d'exécuter des fonctions de traitement de données de type Map/Reduce.",
+			Website: "Site personnel",
+			WebsiteDesc:
+				"Site personnel écrit en React, hébergé sur le dispositif Github Pages.",
+			Secos: "SECOS",
+			SecosDesc: "Projet scolaire de kernel x86 codé en C",
 		},
 	},
 };

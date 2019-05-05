@@ -5,9 +5,11 @@ import { withStyles } from "@material-ui/core";
 import MenuIcon from "./Components/MenuIcon";
 import styles from "./styles";
 import { withTranslation } from "react-i18next";
+import InsertDriveFileIcon from "@material-ui/icons/InsertDriveFile";
 import GithubIcon from "../../../Components/Icons/Github";
 import LinkedInIcon from "../../../Components/Icons/LinkedIn";
 import RootMeIcon from "../../../Components/Icons/RootMe";
+import Resume from "../../../Resume.pdf";
 
 class Drawer extends React.Component {
 	render() {
@@ -26,6 +28,12 @@ class Drawer extends React.Component {
 				>
 					<Divider />
 					<List>
+						<MenuIcon
+							tooltip={t("Resume")}
+							IconComponent={InsertDriveFileIcon}
+							link={Resume}
+							className={classes.iconHover}
+						/>
 						<MenuIcon
 							tooltip={t("Email")}
 							IconComponent={MailIcon}
